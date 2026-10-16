@@ -8,5 +8,6 @@ The repos here are finished work samples pulled out of that private system. Each
 |---|---|---|
 | [resumable-fanout](https://github.com/Josevventures/resumable-fanout) | A parallel subagent dispatch silently dropped work partway through a run. There was no error and no way to tell which piece was lost. | Checkpointed, capped-concurrency dispatch with crash recovery and a single deterministic reducer that is the only thing allowed to merge results. |
 | [audio-debrief](https://github.com/Josevventures/audio-debrief) | Standard diarization silently lost the far-side speaker on phone-captured calls. | Offline transcript plus delivery metrics, built on a hybrid Whisper-VAD and speaker-embedding diarizer that picks up the far-side speaker. |
+| [job-search-copilot](https://github.com/Josevventures/job-search-copilot) | Job leads arrived as links, LinkedIn posts and roundups faster than I could read them, and my first automated pass scored the posts instead of the jobs. | Resolves links into one lead per job, triages each with Claude Code subagents, ranks it with a hard pay gate plus a 1–100 weighted score, and drafts application prep. It never submits. |
 
 The system itself isn't public. I'm on [LinkedIn](https://www.linkedin.com/in/joselvillalba/).
