@@ -4,6 +4,8 @@ Builder-investor. I build and run a personal multi-agent AI system on Claude Cod
 
 The repos here are finished work samples pulled out of that private system. Each one started as a real problem I hit while running it. I fixed it, wrote it up, and kept the repo small on purpose.
 
+For how the whole system fits together, see the [OS Map](https://claude.ai/artifact/9s2i8gMQC23dyxkyvtU79P). It's an interactive map of the architecture, agents, skills, how I built it, and what I learned, with private details removed.
+
 | Repo | Problem | What it does |
 |---|---|---|
 | [resumable-fanout](https://github.com/Josevventures/resumable-fanout) | A parallel subagent dispatch silently dropped work partway through a run. There was no error and no way to tell which piece was lost. | Checkpointed, capped-concurrency dispatch with crash recovery and a single deterministic reducer that is the only thing allowed to merge results. |
